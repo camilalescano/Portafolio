@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,200;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+        
+    <div class="container d-flex h-100">
+        <!--CONTENEDOR CENTRAL-->                        
+        <div class="col-lg-6 mx-auto text-center my-auto poppins">
+            <h3 class="space2">Hola soy Camila!</h3>
+            <!--CAJA BLANCA-->            
+            <div id="white-box" class="px-2">
+                <!--PRIMERA FILA-->            
+                <div class="row d-flex justify-content-evenly pt-5">
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
+                        <img src="img/icons/sobre-mi.png" alt="Sobre Mí" title="Sobre Mí" class="img-fluid">
+                        <figcaption class="figbox">
+                            <a href="#modalSobreMi" data-bs-toggle="modal" class="figlink gris">sobre mí</a>
+                        </figcaption> 
+                    </figure>
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
+                        <img src="img/icons/pcicon.png" alt="Trabajos" title="Trabajos" class="img-fluid">
+                        <figcaption class="figbox">
+                            <a href="trabajos.html" target="_blank" class="figlink gris">trabajos</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3"><a href="https://github.com/camilalescano/" target="_blank"><img src="img/icons/github.png" alt="GitHub" title="GitHub" class="img-fluid"></a></figure>                    
+                </div>
+                <!--SEGUNDA FILA-->
+                <div class="row d-flex justify-content-evenly pt-3 pb-4">                    
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3"><a href="https://www.linkedin.com/in/clescanovasquez" target="_blank"><img src="img/icons/linkedin.png" alt="LinkedIn" title="LinkedIn" class="img-fluid"></a></figure>
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
+                        <img src="img/icons/contacto.png" alt="Contacto" title="Contacto" class="img-fluid">
+                        <figcaption class="figbox">
+                            <a href="#modalContacto" data-bs-toggle="modal" class="figlink gris">contacto</a>
+                        </figcaption>                        
+                    </figure>
+                    
+                    <figure class="col-xl-3 col-lg-3 col-md-3 col-sm-3"><img src="img/icons/ilusion.png" alt="" title="Ilusión Óptica" class="img-fluid rotate"></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONTACTO -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalpage poppins">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CONTACTO ✉️</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Me pueden contactar al siguiente correo 🙂:                    
+
+                    <div class="input-group mt-4 mb-3">
+                        <input type="text" readonly="readonly" class="form-control" id="miCorreo" value="camilalescano.lv@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button onclick="copiarCorreo()" class="btn btn-outline-secondary" type="button">Copiar</button>
+                        </div>                        
+                    </div>
+
+                    <!--ALERT COPIADO-->
+                    <div id="alertcopiado" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none">
+                        Copiado!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <!--FIN ALERT-->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL SOBRE MÍ -->
+    <div class="modal fade" id="modalSobreMi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalpage poppins">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SOBRE MÍ ✨</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-15 d-flex flex-row row">
+                    <div class="col-7">Hola! Mi nombre es Camila y soy una persona a la que siempre le gusta investigar
+                         y aprender cosas nuevas. <br>Me encanta poder combinar la 
+                         <strong class="aqua space2">tecnología</strong> con el <strong class="lila space2">diseño</strong> 
+                         por ello decidí optar por el mundo del desarrollo web 🙂!
+                    </div>
+                    
+                    <div class="col-5">
+                        <img src="img/icons/sobremi.png" alt="Sobre Mí" title="Sobre Mí" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  
+</body>
+</html>
+

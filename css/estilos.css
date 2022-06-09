@@ -1,0 +1,155 @@
+body,html {
+  height: 100%;
+}
+
+body{
+  margin:auto;
+  background-image: url(../img/fondo.png);  
+  background-size: cover; /*La imagen nunca se achica*/
+  background-attachment: fixed; /*La imagen se mantiene estática
+  a pesar de dar scroll abajo/arriba*/  
+}
+
+
+#white-box{
+  background-color:white;    
+  border-radius: 15px;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;  
+}
+
+
+#white-box figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  overflow: hidden;
+}
+
+#white-box figure:hover img {
+	opacity: .7;
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.rotate {
+  animation: rotation 24s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+a:link{ 
+  text-decoration: none;
+}
+
+a:visited{ 
+  text-decoration: none;
+}
+
+a:hover{ 
+  text-decoration: none;
+  color:#3a3a3a;
+}
+
+a:active{ 
+  text-decoration: none;
+}
+
+.box {
+  position: relative;
+}
+
+.figlink {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);  
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}  
+
+.figbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;  
+}
+  
+.box:hover .figbox {
+  opacity: 1;
+}
+
+.gris{
+  color: #3a3a3a;
+}
+
+.blanco{
+  color: white;
+}
+
+.modalpage{
+  background-color: white;
+ 
+}
+
+.fs-15{
+  font-size:15px;
+}
+
+.fs-13{
+  font-size:13px;
+}
+
+.aqua{
+  color:#009C9D;
+}
+
+.lila{
+  color:#A460C3;
+}
+
+.space2{
+  letter-spacing: 2px;
+}
+
+.card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+}
+
+.card img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;  
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover img {
+	opacity: .7;  
+}
