@@ -6,7 +6,7 @@ Código de mi portafolio realizado con Bootstrap y con una diagramación y dise�
 Camila Lescano Vásquez
 
 ## Ejemplo en vivo
-*Por actualizar
+Lo pueden visualizar aquí: https://camilalescano.github.io/Portafolio/
 
 ## Instalación
 Este proyecto no requiere instalación alguna, simplemente se abre el archivo index.html 
